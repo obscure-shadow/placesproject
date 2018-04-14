@@ -1,0 +1,1 @@
+const placesDB = JSON.parse(localStorage.getItem("placesDB"))

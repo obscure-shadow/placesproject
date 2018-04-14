@@ -1,0 +1,10 @@
+.place {
+    display: inline-block;
+    margin: 0 10px;
+    min-width: 25%;
+    padding: 5px 20px;
+}
+img {
+    width: 200px;
+    height: auto;
+}
