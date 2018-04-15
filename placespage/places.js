@@ -38,25 +38,25 @@ const placesgen = () => {
             placeSection.classList += `${location.country} `
             
 
-            // h2 child component of section
+            // h2 child component of section contains name of location
             const placeName = document.createElement("h2")
             placeName.classList = "place__name "
             placeName.textContent = location.name
             placeSection.appendChild(placeName)
 
-            // img child component of section
+            // img child, contains image of location
             const placeImage = document.createElement("img")
             placeImage.classList= "place__image "
             placeImage.src = location.img 
             placeSection.appendChild(placeImage)
 
-            // p child component of section
+            // p child component of section, contains year visited
             const placeYear = document.createElement("p")
             placeYear.classList = "place__year "
             placeYear.textContent = location.year
             placeSection.appendChild(placeYear)
 
-            // p child component of section
+            // p child component of section, contains 5 attractions
             const placeAttractions = document.createElement("p")
             placeAttractions.classList = "place__attractions "
             placeAttractions.textContent = location.attractions
