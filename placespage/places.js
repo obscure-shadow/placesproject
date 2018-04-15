@@ -34,9 +34,9 @@ const placesgen = () => {
            // Apply different class based on country
            //(North America = green, South America = blue, Asia = purple, 
            //Antarctica = yellow, Europe = orange, Africa = red, Australia = brown)
-           if (location.country === "USA") {
-               placeSection.classList += "USA "
-            }
+           
+            placeSection.classList += `${location.country} `
+            
 
             // h2 child component of section
             const placeName = document.createElement("h2")
@@ -58,7 +58,7 @@ const placesgen = () => {
 
             // p child component of section
             const placeAttractions = document.createElement("p")
-            placeAttractions.classList = "student__country "
+            placeAttractions.classList = "place__attractions "
             placeAttractions.textContent = location.attractions
             placeSection.appendChild(placeAttractions)
 
